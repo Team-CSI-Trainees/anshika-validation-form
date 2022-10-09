@@ -1,0 +1,42 @@
+/**
+* ! changing default styles of browser
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+
+/**
+* ! style rules for form section
+**/
+
+form{
+    max-width: 400px;
+    box-shadow:2px 2px 4px rgba(0,0,0,0.1);
+    padding: 50px;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form> div> input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+}
+/**
+* ! style rules for form icons
+**/
+
+/**
+* ! Media Queries are here
+**/
