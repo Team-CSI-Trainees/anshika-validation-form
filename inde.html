@@ -4,14 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="CMA Tutorials">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <title>Form Validation</title>
 </head>
 <body>
  <div class="container">
+
+  <div class="content">
+    <div class="logo">
+      <img src="C:\Users\Dell\Desktop\Validation Form\images\images.png" alt="" />
+    </div>
+    <div class="image"></div>
+    <div class="text">Your all details<br />
+      write down here
+    </div>
+    </div>
    <form id="form">
-    <div class="title">Get Started</div>
+    <div class="social">
+      <div class="title">Get Started</div>
+      <div class="question">
+        Already have an account? <br />
+        <span>Sign In</span>
+      </div> 
+
+      <div class="btn">
+        <div class="btn-1">  <img src="https://img.icons8.com/color/30/000000/google-logo.png" />
+          Sign Up
+      </div>
+        <div class="btn-2">
+          <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" />
+          Sign Up
+        </div>
+      </div>
+
+      <div class="or">Or</div>
+    </div>
+    
     <!-- /**
       * !  user name Input here
     **/ -->
@@ -39,7 +69,35 @@
       <div class="error"></div>
     </div>
 
-            <!-- /**
+
+        <!-- /**
+      * !  Phone number input here
+
+    **/ -->
+
+    <div>
+      <label for="phone number">Phone Number</label>
+    <i class="fas fa-phone"></i>
+    <input type="phone number" name="phone number" id="phone number" placeholder="XXXXXXXXXX" />
+    <i class="fas fa-exclamation-circle failure-icon"></i>
+    <i class="far fa-check-circle success-icon"></i>
+    <h5 class="text">Please Enter Your Phone Number</h5>
+    <input type="submit" value="Check" class="check">
+    <div class="error"></div>
+  </div>
+
+
+      <!-- /**
+      * !  Gender Input here
+    **/ -->
+
+    <!-- <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other  -->
+
+
+
+         <!-- /**
       * !  Password Input here
     **/ -->
 
@@ -49,8 +107,24 @@
         <input type="password" name="password" id="password" placeholder="Password here" />
         <i class="fas fa-exclamation-circle failure-icon"></i>
         <i class="far fa-check-circle success-icon"></i>
-        <div class="error"></div   
+        <div class="error"></div> 
     </div>
+
+
+
+     <!-- /**
+      * !  Confirm Password Input here
+    **/ -->
+
+    <div>
+      <label for="confirm password">Confirm Password</label>
+      <i class="fas fa-lock"></i>
+      <input type="confirm password" name="confirm password" id="confirm password" placeholder="Password here" />
+      <i class="fas fa-exclamation-circle failure-icon"></i>
+      <i class="far fa-check-circle success-icon"></i>
+      <div class="error"></div>
+    </div>
+      
 
     <button type="submit" id="submit">Submit</button>
    </form>
